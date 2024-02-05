@@ -1,0 +1,359 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#header{
+    position: fixed;
+    top:0px;
+    width:100%;
+    z-index: 1000;
+    background-color: white;
+}
+nav{
+    display: flex;
+    height: 70px;
+    border-bottom: 1px grey solid;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#logo img{
+ width:180px;
+ height:40px;
+}
+#nav-content ul{
+    display: flex;
+    /* justify-content: space-between; */
+}
+#nav-content ul li{
+    list-style-type: none;
+    /* margin-right: 30px; */
+    font-size: larger;
+    height: 60px;
+    line-height: 60px;
+    font-weight: 600;
+    width:100px;
+    text-align: center;
+}
+#nav-content ul div{
+    height: 70px;
+}
+#nav-content ul li:hover{
+    background-color: rgba(135, 207, 235, 0.11);
+    color:rgb(0, 170, 255)
+}
+
+#login button{
+    width:80px;
+    height: 40px;
+    color:rgb(0, 170, 255);
+    border: 1px rgb(0, 170, 255) solid;
+    border-radius: 18%;
+    background-color: white;
+}
+#home_main{
+    display: flex;
+    margin-top: 200px;
+    justify-content: space-around;
+}
+#banner{
+    height: 450px;
+    width: 450px;
+    background-image:url(home-desktop-banner.jpg);
+    background-size: cover;
+    border-radius: 10%;
+    margin-right: 50px;
+}
+
+#google_play{
+    height:60px;
+    width:180px;
+    border: 0.5px solid rgba(128, 128, 128, 0.212);
+    border-radius: 10px;
+}
+#google_play:hover{
+    border: 0.5px solid rgba(128, 128, 128, 0.705);
+}
+#app_store{
+    height:60px;
+    width:170px;
+    border: 0.5px solid rgba(128, 128, 128, 0.212);
+    border-radius: 10px;
+}
+#app_store:hover{
+    border: 0.5px solid rgba(128, 128, 128, 0.705);
+}
+h2{
+    font-size: 65px;
+}
+
+h5{
+    font-size: 22px;
+    color: grey;
+}
+h6{
+    margin-top: 10px;
+    font-size: 17px;
+    color: rgb(75, 75, 75);
+}
+#content{
+    margin-left: 100px;
+}
+
+
+
+#black_pict {
+    margin-top: 200px;
+    background-color: black;
+    height: 550px;
+    color: white;
+    position: relative;
+}
+
+#pictures {
+    padding: 150px;
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    position: relative;
+}
+
+.d {
+    position: relative;
+    transform: translateY(100%);
+    visibility: hidden;
+    transition: transform 0.5s ease-in-out, visibility 0s;
+}
+
+#pictures:hover .d:nth-child(1) {
+    transition-delay: 0.5s;
+}
+
+#pictures:hover .d:nth-child(2) {
+    transition-delay: 1s;
+}
+
+#pictures:hover .d:nth-child(3) {
+    transition-delay: 1.5s;
+}
+
+#pictures:hover .d:nth-child(4) {
+    transition-delay: 2s;
+}
+
+#pictures:hover .d {
+    transform: translateY(0);
+    visibility: visible;
+}
+
+#pictures div img {
+    height: 150px;
+    width: 150px;
+}
+
+#pictures div h4 {
+    font-size: 30px;
+}
+
+#pictures div h6 {
+    color: white;
+    font-size: 18px;
+}
+
+#number {
+    position: absolute;
+    top: 40px;
+    left: 35%;
+    font-size: 30px;
+}
+#why_bharatpay{
+    margin-top: 100px;
+    text-align: center;
+}
+
+#why_bharatpay h6{
+    color:black;
+    font-size: 20px;
+}
+#why_bharatpaymain{
+    display: flex;
+    padding:50px;
+    justify-content: space-around;
+    
+}
+
+#why_bharat-img{
+    height:400px;
+    width:550px;
+    background-image: url(Screenshot\ 2024-01-27\ 232501.png);
+    background-size: cover;
+    border-radius: 10%;
+}
+
+#why_bharatpay:hover{
+    #why_bharat-img{
+    animation: size 0.25s ease-in-out;
+    }
+}
+@keyframes size{
+    from{
+        transform: scale(1)
+    }
+    to{
+        transform: scale(1.1);
+    }
+}
+
+#why_bharat_content{
+    padding-top: 100px;
+}
+
+#why_bharat_content h4{
+    font-size: 32px;
+    font-weight: 800;
+}
+
+#why_bharat_content h6{
+    color: black;
+    font-size: 18px;
+}
+
+
+#recent_news{
+    margin-top:80px;
+    margin-bottom: 100px;
+}
+#recent_news h2{
+    text-align: center;
+}
+#news-1{
+    padding:40px;
+    padding-top:80px;
+    display:flex;
+    justify-content: space-around;
+}
+
+.news{
+    width:380px;
+    height:320px;
+    border:1px rgb(141, 140, 140) inset ;
+    border-radius: 5%;
+    background-color: white;
+    padding:10px;
+}
+
+.news h3{
+    font-size: 25px;;
+}
+
+.news p{
+    font-size: 18px;
+}
+
+.news h5{
+    font-size: 20px;
+    color: rgb(0, 170, 255);
+}
+
+#news-2{
+    padding:40px;
+    /* display:flex; */
+    justify-content: space-around;
+    display:none;
+}
+
+#btn{
+    position:absolute;
+    height:40px;
+    width:150px;
+    border:1px solid rgb(0, 170, 255);
+    color:rgb(0, 170, 255);
+    left:45%;
+    border-radius: 5%;
+    font-size: 15px;
+    background-color: white;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+#footer_main{
+    background-color: black;
+}
+#footer{
+    padding-top: 90px;
+    padding-left: 20px;
+    display:flex;
+    flex-wrap: wrap;
+    background-color: black;
+    color:white;
+    justify-content: space-around;
+}
+
+#play{
+    height:50px;
+    width:160px;
+    border: 0.5px solid rgba(128, 128, 128, 0.212);
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+#apple{
+    height:50px;
+    width:160px;
+    border: 0.5px solid rgba(128, 128, 128, 0.212);
+    border-radius: 10px;
+}
+
+#footer div:nth-child(1){
+    width:500px;
+}
+
+a{
+    text-decoration: none;
+    color:white
+}
+
+a:hover{
+    color:rgb(0, 170, 255) ;
+}
+li{
+    list-style-type: none;
+}
+
+#footer div h5{
+    color:white;
+}
+
+#footer div h6{
+    color:white;
+    font-weight: 400;
+}
+
+hr{
+    color: white;
+}
+
+#logo_footer img{
+    margin-left: 60px;
+    
+}
+
+#icon{
+    display: flex;
+    justify-content: space-between;
+}
+
+#icon_sm i{
+    color: white;
+    font-size: 30px;
+    padding-right: 25px;
+}
+
+#icon_sm i:hover{
+    color:rgb(0, 170, 255);
+}
+
+#icon div h4{
+    color:white;
+    padding-left: 30px;
+    font-size: 20px;
+}
